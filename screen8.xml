@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="#D1F2EB"
+    tools:context=".MainActivity"
+    android:weightSum="20">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1F2EB"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:backgroundTint="#D1F2EB"
+        android:layout_weight="10">
+        <Button
+            android:id="@+id/arrowbackButton"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="start"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="#000000"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="8sp"
+            android:text="Let's Find..."
+            android:textColor="#2980B9"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_gravity="start">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="23sp"
+            android:layout_marginTop="25sp"
+            android:text="Recent searches"
+            android:textColor="#2980B9"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D1F2EB"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/mentor1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:backgroundTint="#D1F2EB"
+                android:text="Mentor 1"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="11sp"/>
+            <Button
+                android:id="@+id/X1Button"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/baseline_clear_24"
+                android:layout_marginStart="260sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D1F2EB"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mentor2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:backgroundTint="#D1F2EB"
+                android:text="Mentor 2"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="11sp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/X2Button"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/baseline_clear_24"
+                android:layout_marginStart="260sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D1F2EB"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/mentor3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:backgroundTint="#D1F2EB"
+                android:text="Mentor 3"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="11sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/X3Button"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/baseline_clear_24"
+                android:layout_marginStart="260sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1F2EB"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:backgroundTint="#AED6F1"
+        android:layout_weight="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="23sp"
+            android:layout_marginTop="25sp"
+            android:text="Browse Categories"
+            android:textColor="#2980B9"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AED6F1"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="20sp"
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_1"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/choice1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="11sp"
+                android:backgroundTint="#AED6F1"
+                android:text="Entrepreneurship"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/arrow1Button"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/baseline_arrow_outward_24"
+                android:layout_marginStart="95sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AED6F1"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="20sp"
+            >
+            <ImageView
+                android:id="@+id/imageVie1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/choice2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="11sp"
+                android:backgroundTint="#AED6F1"
+                android:text="Personal Growth"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/arrow2Button"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/baseline_arrow_outward_24"
+                android:layout_marginStart="100sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AED6F1"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="20sp"
+            >
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_2_1"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/choice3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="11sp"
+                android:backgroundTint="#AED6F1"
+                android:text="Education"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/arrow3Button"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/baseline_arrow_outward_24"
+                android:layout_marginStart="160sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2980B9"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:layout_marginTop="20sp">
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/baseline_add_home_24" />
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/baseline_content_paste_search_24" />
+            <Button
+                android:id="@+id/plusButton"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/baseline_add_circle_24" />
+            <Button
+                android:id="@+id/chatButton"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/baseline_add_comment_24" />
+
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/baseline_account_circle_24" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

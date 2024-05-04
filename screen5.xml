@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#D1F2EB"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/leftarrowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="#D1F2EB"
+        android:text="-"
+        android:textColor="#2980B9"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="12sp"
+            android:text="Forgot Password?"
+            android:textColor="#2980B9"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_gravity="start">
+        </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="30sp"
+        android:text="Don’t worry! It happens. Please enter the email associated with your account."
+        android:textColor="#1C2833"
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_gravity="start"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1C2833"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="25sp"
+            >
+        </TextView>
+        <EditText
+        android:id="@+id/myEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:hint="  Enter Email"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginTop="12sp"
+        android:inputType="text"
+        android:gravity="left|center"/>
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="180sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#2980B9"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D1F2EB"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90sp"
+                android:layout_marginBottom="30sp"
+                android:gravity="bottom|center"
+                android:text="Remember your password?"
+                android:textColor="#1C2833"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D1F2EB"
+                android:gravity="start|center"
+                android:text="Login"
+                android:textSize="15sp"
+                android:textColor="#2980B9" />
+        </LinearLayout>
+
+</LinearLayout>

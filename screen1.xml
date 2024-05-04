@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="20"
+    android:background="#D1F2EB"
+    tools:context=".MainActivity">
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start">
+
+        <View
+            android:id="@+id/circle1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circle_background"
+            android:layout_margin="1dp"
+            />
+
+        <View
+            android:id="@+id/circle2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circle_background"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
+    -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D1F2EB"
+        android:layout_weight="10"
+        android:gravity="bottom"
+        android:layout_marginBottom="0sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mentor"
+            android:textSize="55sp"
+            android:textStyle="bold|italic"
+            android:textColor="#7FB3D5"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="me"
+            android:textSize="55sp"
+            android:textStyle="bold|italic"
+            android:textColor="#F4D03F"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D1F2EB"
+        android:layout_weight="10"
+        android:gravity="top"
+        android:layout_marginTop="1dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect. ask. learn."
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:textColor="#7FB3D5"
+            >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

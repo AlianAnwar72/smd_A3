@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7FB3D5"
+        android:orientation="vertical"
+        android:layout_weight="12">
+        <Button
+            android:id="@+id/leftarrowButton"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="start"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="220sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:text="Hi, I’m
+        John Cooper"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_gravity="start">
+            </TextView>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_p4"
+                android:scaleType="centerCrop"
+                android:layout_gravity="start"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/horizontalLine1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:text="Drop me a review"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="start">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:gravity="end"
+                android:text="😊"
+                android:textColor="#FFD700"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1F2EB"
+        android:orientation="vertical"
+        android:layout_weight="8">
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="130sp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:id="@+id/myEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="       Type your experience..."
+                android:layout_marginTop="15sp"
+                android:inputType="text"
+                android:gravity="start"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="☆☆☆☆☆"
+            android:textColor="#2980B9"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#2980B9"
+            android:text="Submit Feedback"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

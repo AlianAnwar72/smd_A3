@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/headerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:padding="16dp">
+
+        <!-- Icon Before Name -->
+        <ImageView
+            android:id="@+id/iconBeforeName"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="John Copper"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingStart="50dp"
+            android:paddingEnd="1dp"/>
+
+        <ImageView
+            android:id="@+id/iconAfterName"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_call_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"/>
+
+
+        <ImageView
+            android:id="@+id/iconAfterName2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_camera_indoor_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:layout_marginRight="50dp"/>
+    </RelativeLayout>
+    <!-- Messages Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/messagesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bottomNavigationBar"
+        android:layout_below="@+id/headerSection">
+
+        <!-- Messages RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/messageInputSection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateIds">
+
+            <!-- Sample User Message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#B2FF59"
+                android:padding="10dp"
+                android:text="Hello, how are you?"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Sample Reply Message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80D8FF"
+                android:padding="10dp"
+                android:text="I'm good, thank you! How about you?"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/messagesRecyclerView"/>
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <!-- Message Input Section -->
+
+        <!-- Sample Reply Message -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messagesRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/messageInputSection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:background="#B2FF59"
+                android:padding="10dp"
+                android:text="Hello, you there?"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="287dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="#B2FF59"
+                android:padding="10dp"
+                android:text="Hello, you there?"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="300dp" />
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="#B2FF59"
+            android:padding="10dp"
+            android:text="Hello, you there?"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="487dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80D8FF"
+            android:padding="10dp"
+            android:text="I'm good, thank you! How about you?"
+            android:layout_marginStart="16dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/messagesRecyclerView"/>
+
+
+
+
+            />
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="72dp"
+            android:background="#80D8FF"
+            android:padding="10dp"
+            android:text="yes?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/messagesRecyclerView" />
+
+        <LinearLayout
+            android:id="@+id/messageInputSection"
+            android:layout_width="0dp"
+            android:layout_height="80sp"
+            android:background="#2B94A1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messagesRecyclerView">
+
+            <!-- Icons Before Type a Message -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/gallery" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/icon1" />
+
+            <!-- Message Input Box -->
+            <EditText
+                android:id="@+id/messageInputEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Type a message..."
+                android:padding="12dp" />
+
+            <!-- Icons After Type a Message -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/icon2" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/icon3" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#009688"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/navIcon1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon1"
+            android:padding="12dp"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/navIcon2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon2"
+            android:padding="12dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/navIcon3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon3"
+            android:padding="12dp"
+            android:layout_marginLeft="60dp" />
+        <ImageView
+            android:id="@+id/navIcon4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon4"
+            android:padding="12dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
